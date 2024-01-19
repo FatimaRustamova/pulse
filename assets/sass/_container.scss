@@ -310,6 +310,7 @@ nav{
     background-image: url("../images/slider-2.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     .menu{
         @include center;
         flex-direction: column;
@@ -445,6 +446,7 @@ nav{
 footer{
     width: 100%;
     padding: 20px 0;
+    background-color: $color1;
     .copy{
         @include center;
         p{
@@ -455,6 +457,90 @@ footer{
             a{
                 text-decoration: none;
                 color: $color5;
+            }
+        }
+    }
+}
+
+.add{
+    width: 100%;
+    padding: 120px 0 90px 0;
+    @include center;
+    flex-direction: column;
+    gap: 80px;
+    background-image: url("../images/slider-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    form{
+        width: 420px;
+        padding: 30px;
+        background: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 2px solid $color7;
+        label{
+            font-family: $font-family1;
+            font-size: 18px;
+            margin-top: 15px;
+            color: $color1;
+        }
+        #error{
+            visibility: hidden;
+            color: $color6;
+            font-family: $font-family1;
+            font-size: 18px;
+        }
+        input[type=text]{
+            width: 100%;
+            height: 45px;
+            background-color: $color1;
+            border: 1px solid $color1;
+            font-family: $font-family1;
+            font-size: 17px;
+            padding-left: 15px;
+            outline: none;
+        }
+        input[type=submit]{
+            width: 150px;
+            height: 45px;
+            background-color: $color7;
+            border: 1px solid $color7;
+            font-family: $font-family1;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: 100px;
+            color: $color1;
+            cursor: pointer;
+        }
+    }
+    table{
+        width: 90%;
+        border-collapse: collapse;
+        background: none;
+        border: 2px solid $color7;
+        tr{
+            border-bottom: 2px solid $color7;
+            th, td{
+                color: $color1;
+                font-family: $font-family2;
+                font-size: 18px;
+                border-right: 2px solid $color7;
+                text-align: center;
+                padding: 10px 0;
+                button{
+                    width: 100px;
+                    height: 40px;
+                    background-color: $color6;
+                    border: 1px solid $color6;
+                    font-family: $font-family1;
+                    font-size: 16px;
+                    color: $color1;
+                    cursor: pointer;
+                    border-radius: 20px;
+                }
             }
         }
     }
