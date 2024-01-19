@@ -61,3 +61,11 @@ sort.addEventListener("change", (e)=> {
 function viewDetails(id) {
     window.location = `./details.html?id=${id}`
 }
+
+//--Navbar--//
+let nav = document.querySelector("nav");
+let list = document.querySelector("#list");
+
+list.addEventListener("click", ()=> {
+    
+})

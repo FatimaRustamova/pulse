@@ -386,6 +386,7 @@ nav{
             font-size: 18px;
             padding-left: 15px;
             color: $color1;
+            cursor: pointer;
         }
     }
     .egg{
@@ -561,17 +562,19 @@ footer{
     }
     .modal{
         display: none;
-        top: 350px;
-        left: 550px;
-        width: 400px;
-        height: 100px;
+        top: 220px;
+        left: 600px;
+        width: 300px;
+        height: 250px;
         border-radius: 20px;
-        background-color: $color1;
-        @include center;
+        background-color: $color6;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color6;
         p{
-            color: $color6;
+            color: $color1;
             font-family: $font-family1;
-            font-size: 20px;
+            font-size: 22px;
             text-align: center;
         }
         i{
@@ -579,7 +582,8 @@ footer{
             top: 15px;
             right: 15px;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 25px;
+            color: $color1;
         }
     }
 }
@@ -599,7 +603,7 @@ footer{
         align-items: center;
         gap: 10px;
         margin-top: 50px;
-        border: 2px solid $color7;
+        border: 2px solid $color3;
         .ham{
             display: flex;
             flex-direction: column;

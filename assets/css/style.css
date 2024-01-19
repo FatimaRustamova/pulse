@@ -414,6 +414,7 @@ nav .navbar .i i {
   font-size: 18px;
   padding-left: 15px;
   color: white;
+  cursor: pointer;
 }
 .sect5 .egg {
   display: flex;
@@ -594,20 +595,20 @@ footer .copy p a {
 }
 .add .modal {
   display: none;
-  top: 350px;
-  left: 550px;
-  width: 400px;
-  height: 100px;
+  top: 220px;
+  left: 600px;
+  width: 300px;
+  height: 250px;
   border-radius: 20px;
-  background-color: white;
-  display: flex;
+  background-color: brown;
   justify-content: center;
   align-items: center;
+  border: 2px solid brown;
 }
 .add .modal p {
-  color: brown;
+  color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
 }
 .add .modal i {
@@ -615,7 +616,8 @@ footer .copy p a {
   top: 15px;
   right: 15px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
+  color: white;
 }
 
 .details {
@@ -636,7 +638,7 @@ footer .copy p a {
   align-items: center;
   gap: 10px;
   margin-top: 50px;
-  border: 2px solid seagreen;
+  border: 2px solid rgb(214, 167, 26);
 }
 .details .soft .ham {
   display: flex;
