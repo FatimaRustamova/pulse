@@ -449,6 +449,21 @@ nav .navbar .i i {
   width: 40%;
   height: 1px;
   background-color: white;
+  position: relative;
+}
+.sect5 .egg .soft .div button {
+  width: 100px;
+  height: 40px;
+  background: none;
+  border: 1px solid rgb(214, 167, 26);
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  left: 50px;
 }
 .sect5 .egg .soft .price span {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -521,8 +536,8 @@ footer .copy p a {
   margin-top: 15px;
   color: white;
 }
-.add form #error {
-  visibility: hidden;
+.add form p {
+  display: none;
   color: brown;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -577,6 +592,78 @@ footer .copy p a {
   cursor: pointer;
   border-radius: 20px;
 }
+.add .modal {
+  display: none;
+  top: 350px;
+  left: 550px;
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add .modal p {
+  color: brown;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.add .modal i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.details {
+  width: 100%;
+  padding: 215px 0;
+  background-image: url("../images/slider-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .soft {
+  width: 47%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  border: 2px solid seagreen;
+}
+.details .soft .ham {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.details .soft .ham h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.details .soft .ham p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(134, 126, 126);
+}
+.details .soft .div {
+  width: 40%;
+  height: 1px;
+  background-color: white;
+}
+.details .soft .price span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: white;
+}
 
 @media screen and (max-width: 990px) {
   .container {
@@ -626,6 +713,12 @@ footer .copy p a {
     width: 150px;
     right: -170px;
   }
+  .sect5 .egg {
+    flex-direction: column;
+  }
+  .sect5 .egg .soft {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -657,6 +750,9 @@ footer .copy p a {
   }
   .sect4 .food .lunch {
     width: 100%;
+  }
+  .sect5 .input {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 576px) {

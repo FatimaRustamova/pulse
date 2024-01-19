@@ -18,7 +18,9 @@ function getAllData() {
                         <h3>${element.name}</h3>
                         <p>${element.desc}</p>
                     </div>
-                    <div class="div"></div>
+                    <div class="div">
+                        <button onclick="viewDetails(${element.id})">View Details</button>
+                    </div>
                     <div class="price">
                         <span>$${element.price}</span>
                     </div>
@@ -54,3 +56,8 @@ sort.addEventListener("change", (e)=> {
     };
     getAllData();
 })
+
+//--Details//
+function viewDetails(id) {
+    window.location = `./details.html?id=${id}`
+}

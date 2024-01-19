@@ -418,6 +418,21 @@ nav{
                 width: 40%;
                 height: 1px;
                 background-color: $color1;
+                position: relative;
+                button{
+                    width: 100px;
+                    height: 40px;
+                    background: none;
+                    border: 1px solid $color3;
+                    cursor: pointer;
+                    font-family: $font-family2;
+                    font-size: 15px;
+                    color: $color1;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 5px;
+                    left: 50px;
+                }
             }
             .price{
                 span{
@@ -487,8 +502,8 @@ footer{
             margin-top: 15px;
             color: $color1;
         }
-        #error{
-            visibility: hidden;
+        p{
+            display: none;
             color: $color6;
             font-family: $font-family1;
             font-size: 18px;
@@ -541,6 +556,76 @@ footer{
                     cursor: pointer;
                     border-radius: 20px;
                 }
+            }
+        }
+    }
+    .modal{
+        display: none;
+        top: 350px;
+        left: 550px;
+        width: 400px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: $color1;
+        @include center;
+        p{
+            color: $color6;
+            font-family: $font-family1;
+            font-size: 20px;
+            text-align: center;
+        }
+        i{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+}
+
+.details{
+    width: 100%;
+    padding: 215px 0;
+    background-image: url("../images/slider-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include center;
+    .soft{
+        width: 47%;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        border: 2px solid $color7;
+        .ham{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+                font-family: $font-family1;
+                font-size: 18px;
+                color: $color1;
+            }
+            p{
+                font-family: $font-family2;
+                font-size: 13px;
+                font-style: italic;
+                color: $color4;
+            }
+        }
+        .div{
+            width: 40%;
+            height: 1px;
+            background-color: $color1;
+        }
+        .price{
+            span{
+                font-family: $font-family2;
+                font-size: 18px;
+                color: $color1;
             }
         }
     }
@@ -627,6 +712,12 @@ footer{
                 }
             }
         }
+        .egg{
+            flex-direction: column;
+            .soft{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -671,6 +762,11 @@ footer{
             .lunch{
                 width: 100%;
             }
+        }
+    }
+    .sect5{
+        .input{
+            flex-direction: column;
         }
     }
 }

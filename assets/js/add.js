@@ -3,7 +3,11 @@ let name = document.querySelector("#name");
 let desc = document.querySelector("#desc");
 let price = document.querySelector("#price");
 let table = document.querySelector("table");
-let error = document.querySelectorAll("#error");
+let modal = document.querySelector(".modal");
+let closeBtn = document.querySelector("#closeBtn")
+// let nameError = document.querySelector("#nameError");
+// let descError = document.querySelector("#descError");
+// let priceError = document.querySelector("#priceError");
 
 form.addEventListener("submit", (event)=> {
     event.preventDefault();
@@ -24,8 +28,23 @@ form.addEventListener("submit", (event)=> {
         })
     }
     else{
-        error.style.display = "block"
+        modal.style.display = "flex";
+        modal.style.position = "fixed";
     }
+    // else if(!nameInp){
+    //     nameError.style.display = "block"
+    // }
+    // else if(!descInp){
+    //     descError.style.display = "block"
+    // }
+    // else{
+    //     priceError.style.display = "block"
+    // }
+})
+
+closeBtn.addEventListener("click", ()=> {
+    modal.style.display = "";
+    modal.style.position = "";
 })
 
 fetch("http://localhost:3000/Pulse")

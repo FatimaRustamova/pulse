@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "Soft-Boiled Organic Egg",
+      "name": "Soft-Boiled Organic Eggg",
       "desc": "with wild mushrooms and asparagus",
       "price": "11.00"
     },
@@ -39,7 +39,7 @@
     {
       "id": 7,
       "name": "Organic Egg Soft-Boiled",
-      "desc": "with wild mushrooms and asparagus",
+      "desc": "with wild mushrooms and asparagusss",
       "price": "5.00"
     },
     {
@@ -47,6 +47,12 @@
       "name": "Boiled Organic Egg Soft",
       "desc": "with wild mushrooms and asparagus",
       "price": "13.00"
+    },
+    {
+      "name": "The Plug NInja",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, pariatur.",
+      "price": "170.00",
+      "id": 9
     }
   ]
 }
